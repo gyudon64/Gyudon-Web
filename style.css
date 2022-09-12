@@ -1,0 +1,973 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    display: none;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    left: 0px;
+    top: 0px;
+    background-color: #000230;
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    width: 148px;
+    height: 48px;
+    left: 48px;
+    top: calc(50% - 24px);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: absolute;
+    width: 585px;
+    height: 24px;
+    right: 64px;
+    top: calc(50% - 12px);
+}
+
+.nav-menu-txt {
+    position: relative;
+    width: 104px;
+    height: 24px;
+    margin-left: 16px;
+    float: left;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav-menu-txt.active {
+    color: #FFF500;
+}
+
+.nav-menu-txt:hover {
+    color: #FFF500;
+    cursor: pointer;
+}
+
+.nav-menu-txt:nth-child(1) {
+    margin-left: 0px;
+}
+
+.main-menu {
+    position: relative;
+    width: 100%;
+    height: 1504px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFB931;
+}
+
+.a-card {
+    position: relative;
+    width: 100%;
+    height: 496px;
+    background-color: #FFB931;
+}
+
+.artist-card {
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    left: 0px;
+    top: 16px;
+    background-color: #f8f8f8;
+}
+
+.artist-img-inside {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-txt {
+    position: absolute;
+    width: 360px;
+    height: 128px;
+    left: 64px;
+    top: 176px;
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 30%;
+}
+
+.info-txt-title {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 36;
+    text-align: left;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.info-txt-body {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0px;
+    top: 48px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: left;
+    color: #ffffff;
+}
+
+.info-txt-body2 {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0px;
+    bottom: 0px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: left;
+    color: #ffffff;
+}
+
+.info-btn {
+    position: absolute;
+    width: 104px;
+    height: 40px;
+    right: 64px;
+    bottom: 40px;
+    background-color: #000000;
+}
+
+.info-btn:hover {
+    width: 124px;
+    height: 48px;
+    right: 60px;
+    bottom: 36px;
+    cursor: pointer;
+}
+
+.info-btn-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: center;
+    color: #ffffff;
+}
+
+.info-btn-txt:hover {
+    font-size: 22;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 349px;
+    left: 0px;
+    background-color: #010555;
+    top: 0px;
+}
+
+.ftr-logo {
+    position: absolute;
+    width: 158px;
+    height: 48px;
+    left: 64px;
+    top: 24px;
+}
+
+.ftr-txt {
+    position: absolute;
+    width: 328px;
+    height: 134px;
+    left: 64px;
+    top: 96px;
+    display: flex;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 14;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.sitemap {
+    position: absolute;
+    width: 140px;
+    height: 192px;
+    right: 32px;
+    top: 32px;
+}
+
+.ftr-title {
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    left: 0px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 24;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.ftr-menu {
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    left: 0px;
+    top: 48px;
+}
+
+.ftr-menu-txt {
+    position: relative;
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    margin-top: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.ftr-menu-txt:hover {
+    cursor: pointer;
+    color: #FFF500;
+}
+
+.ftr-menu-txt:nth-child(1) {
+    margin-top: 0px;
+}
+
+.copyright {
+    position: absolute;
+    width: 248px;
+    height: 8px;
+    right: 64px;
+    bottom: 48px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 12;
+    text-align: justify;
+    color: #ffffff;
+    text-align: right;
+}
+
+.ftr-socmed {
+    position: absolute;
+    width: 219px;
+    height: 37px;
+    left: 64px;
+    bottom: 45px;
+}
+
+.socmed-icon {
+    position: relative;
+    width: 36px;
+    height: 37px;
+    margin-left: 25px;
+    float: left;
+}
+
+.socmed-icon:hover {
+    cursor: pointer;
+}
+
+.socmed-icon:nth-child(1) {
+    margin-left: 0px;
+}
+
+.main-menu2 {
+    position: relative;
+    width: 100%;
+    height: 3072px;
+    left: 0px;
+    top: 0px;
+    background-color: #FFB931;
+    display: flexbox;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 528px;
+    left: 0px;
+    margin-top: 16px;
+    background-color: #949494;
+}
+
+.header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 30%;
+}
+
+.profile {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    right: 64px;
+    top: 108px;
+    background-color: #000000;
+    border-radius: 12px;
+}
+
+.name {
+    position: absolute;
+    width: 600px;
+    height: 48px;
+    right: 64px;
+    top: 292px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 36;
+    text-align: right;
+    color: #ffffff;
+}
+
+.header-info-txt {
+    position: absolute;
+    width: 216px;
+    height: 24px;
+    right: 64px;
+    top: 356px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: right;
+    color: #ffffff;
+}
+
+.header-info-txt2 {
+    position: absolute;
+    width: 600px;
+    height: 24px;
+    right: 64px;
+    top: 396px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: right;
+    color: #ffffff;
+}
+
+.bio-title {
+    position: absolute;
+    width: 272px;
+    height: 64px;
+    left: 64px;
+    top: 592px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40;
+    text-align: left;
+    color: #000000;
+}
+
+.bio-cont {
+    position: absolute;
+    width: 100%;
+    height: 328px;
+    left: 0px;
+    top: 680px;
+}
+
+.icon-pack {
+    position: relative;
+    width: 160px;
+    height: 232px;
+    margin-left: 112px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    float: left;
+}
+
+.icon-pack:nth-child(1) {
+    margin-left: 128px;
+}
+
+.icon-box {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 0px;
+    top: 0px;
+}
+
+.icon-title {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0px;
+    top: 176px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 24;
+    text-align: center;
+    color: #000000;
+}
+
+.icon-txt {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    bottom: 10px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: center;
+    color: #000000;
+}
+
+.portfolio-title {
+    position: absolute;
+    width: 400px;
+    height: 64px;
+    left: 64px;
+    top: 1032px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40;
+    text-align: left;
+    color: #000000;
+}
+
+.portfolio-cont {
+    position: absolute;
+    width: 100%;
+    height: 1464px;
+    left: 0px;
+    top: 1160px;
+}
+
+.img {
+    position: relative;
+    width: 856px;
+    height: 480px;
+    left: 0px;
+    top: 0px;
+    margin-top: 8px;
+    margin-left: 64px;
+    background-color: #000000;
+    float: left;
+}
+
+.img:hover {
+    box-shadow: 0px 0px 50px #FFFFFF;
+    z-index: 3;
+}
+
+.img:nth-child(2) {
+    margin-left: 8px;
+    width: 520px;
+}
+
+.img:nth-child(3) {
+    width: 520px;
+}
+
+.img:nth-child(4) {
+    margin-left: 8px;
+}
+
+.img:nth-child(5) {
+    width: 1384px;
+}
+
+.img-port {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-title {
+    position: absolute;
+    width: 700px;
+    height: 32px;
+    left: 32px;
+    bottom: 72px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 32;
+    text-align: left;
+    color: #ffffff;
+}
+
+.img-txt {
+    position: absolute;
+    width: 400px;
+    height: 24px;
+    left: 32px;
+    bottom: 32px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: left;
+    color: #ffffff;
+}
+
+.img-btn {
+    position: absolute;
+    width: 104px;
+    height: 40px;
+    right: 32px;
+    bottom: 32px;
+    background-color: #010555;
+    border-radius: 6px;
+}
+
+.img-btn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    width: 124px;
+    height: 48px;
+    bottom: 28px;
+    right: 22px;
+}
+
+.img-btn-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 18;
+    text-align: center;
+    color: #ffffff;
+}
+
+.img-btn-txt:hover {
+    color: #000000;
+    padding-top: 10px;
+    font-size: 20;
+}
+
+.contact-title {
+    position: absolute;
+    width: 272px;
+    height: 64px;
+    left: 64px;
+    top: 2696px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40;
+    text-align: left;
+    color: #000000;
+}
+
+.contact-cont {
+    position: absolute;
+    width: 100%;
+    height: 288px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.icon-pack2 {
+    position: relative;
+    width: 160px;
+    height: 168px;
+    left: 48px;
+    top: 48px;
+    margin-left: 48px;
+    float: left;
+}
+
+.icon-pack2:nth-child(1) {
+    margin-left: 0px;
+}
+
+.icon-box2 {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    left: calc(50% - 52px);
+    top: 0px;
+}
+
+.icon-title2 {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    bottom: 32px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: center;
+    color: #000000;
+}
+
+.icon-txt2 {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    bottom: 0px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 14;
+    text-align: center;
+    color: #000000;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-menu3 {
+    position: relative;
+    width: 100%;
+    height: 537px;
+    left: 0px;
+    top: 0px;
+    
+}
+
+.contactus-title {
+    position: absolute;
+    width: 296px;
+    height: 64px;
+    left: 64px;
+    top: 48px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 40;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sect1 {
+    position: absolute;
+    width: 744px;
+    height: 401px;
+    left: 0px;
+    top: 136px;
+}
+
+.sect1-title {
+    position: absolute;
+    width: 296px;
+    height: 40px;
+    left: 168px;
+    top: 40px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 28;
+    text-align: left;
+    color: #ffffff;
+}
+
+.icon-pack3-cont {
+    position: absolute;
+    width: 592px;
+    height: 216px;
+    right: 0px;
+    top: 120px;
+}
+
+.icon-pack3 {
+    position: relative;
+    width: 296px;
+    height: 80px;
+    margin-bottom: 56px;
+    float: left;
+}
+
+.icon-box3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 16px;
+}
+
+.icon-pack3-title {
+    position: absolute;
+    width: calc(100% - 104px);
+    height: 16px;
+    left: 104px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: left;
+    color: #ffffff;
+}
+
+.icon-pack3-txt {
+    position: absolute;
+    width: calc(100% - 104px);
+    height: 16px;
+    left: 104px;
+    top: 32px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sect2 {
+    position: absolute;
+    width: 632px;
+    height: 401px;
+    right: 0px;
+    top: 136px;
+}
+
+.sect2-title {
+    position: absolute;
+    width: 296px;
+    height: 40px;
+    left: 40px;
+    top: 40px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 28;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sect2-input-cont {
+    position: absolute;
+    width: 448px;
+    height: 192px;
+    left: 40px;
+    top: 104px;
+}
+
+.sect2-input {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+    background-color: #FFB931;
+    border-radius: 6px;
+}
+
+.sect2-input-txt {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    padding-left: 16px;
+    top: calc(50% - 8px);
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: left;
+    color: #000000;
+}
+
+.sect2-btn {
+    position: absolute;
+    width: 280px;
+    height: 48px;
+    left: 120px;
+    bottom: 33px;
+    border-radius: 10px;
+    background-color: #010555;
+}
+
+.sect2-btn-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding-top: 8px;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 22;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 328px;
+    left: 808px;
+    top: 176px;
+    background-color: #010555;
+}
+
+#cont-sementara {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    display: none;
+}
+
+.cont-lagi {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+}
+
+.pop-up {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 3;
+}
+
+.popup-cont {
+    position: absolute;
+    width: 960px;
+    height: 621px;
+    top: calc(50% - 310.5px);
+    left: calc(50% - 480px);
+    background-color: #010555;
+}
+
+.popup-img {
+    position: absolute;
+    width: calc(100% - 64px);
+    height: 424px;
+    top: 32px;
+    left: 32px;
+    background-color: grey;
+}
+
+.popup-img-inside {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.popup-img-title {
+    position: absolute;
+    width: 700px;
+    height: 46px;
+    left: 24px;
+    bottom: 48px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.popup-img-date {
+    position: absolute;
+    width: 500px;
+    height: 35px;
+    left: 24px;
+    bottom: 18px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.popup-img-copyright {
+    position: absolute;
+    width: 147px;
+    height: 12px;
+    right: 24px;
+    bottom: 18px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.popup-txt {
+    position: absolute;
+    width: 642px;
+    height: 115px;
+    left: 32px;
+    bottom: 32px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.popup-btn {
+    position: absolute;
+    width: 104px;
+    height: 40px;
+    right: 32px;
+    bottom: 32px;
+    background-color: #FFF500;
+}
+
+.popup-btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.popup-btn-txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding-top: 8px;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 16;
+    text-align: center;
+    color: #000000;
+}
+
+.popup-img img {
+    position: absolute;
+    height: 100%;
+}
+
+.general {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
